@@ -1,0 +1,974 @@
+body{
+    margin: 0px;
+    position: relative;
+}
+body::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: url(images/background.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: none;
+    background-size: cover;
+    opacity: 90%;
+    filter: brightness(40%);
+}
+    
+    /* Navigation Bar */
+
+.navigation-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+.nav-links{
+    position: relative;
+    height: 75px;
+    width: 420px;
+    /* margin-left: 925px; */
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    border-bottom: 3px solid lightblue;
+    border-left: 3px solid lightblue;
+    border-radius: 4px;
+    padding-right: 10px;
+    top: -20px;
+}
+.nav-links a{
+    position: relative;
+    height: 41px;
+    margin-top: 16px;
+    text-decoration: none;
+    color: white;
+    font-family: 'Teko', sans-serif;
+    font-size: 37px;
+    border-bottom: 3px solid transparent;
+    border-radius: 5px;
+    display: flex;
+    transition-duration: 0.4s;
+}
+.nav-links a:hover{
+    letter-spacing: 1.4px;
+    border-bottom: 3px solid white;
+}
+.about a{
+    margin-right: 20px;
+    margin-left: 20px;
+    width: 80px;
+    display: flex;
+    justify-content: center;
+}
+.experience a{
+    margin-right: 20px;
+    margin-left: 20px;
+    width: 130px;    
+    display: flex;
+    justify-content: center;  
+}
+.bods a{
+    margin-right: 20px;
+    margin-left: 20px;
+    width: 70px;
+    display: flex;
+    justify-content: center;
+}
+
+.header{
+    position: relative;
+    height: 550px;
+    width: 100%;
+    color: white;
+    border-top: 1px solid rgb(11, 57, 95);
+    display: grid;
+    grid-template-columns: 1fr;
+    top: -21px;
+}
+.header::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: url(images/baclground.avif);
+    background-repeat: none;
+    background-size: cover;
+    opacity: 70%;
+    filter: brightness(70%);
+}    
+.head{
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr;
+    padding-left: 80px; 
+    padding-top: 45px;  
+}
+.logo{
+    position: relative;
+    height: 250px;
+    font-family: 'Kalam', cursive;
+    font-size: 120px;
+    display: flex;
+    align-items: center;
+}
+.ulogo{
+    height: 128px;
+}
+.slogan{
+    position: relative;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 25px;
+    display: flex;
+    padding-left: 76px;
+}
+.bio-wrapper{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.bio{
+    position: relative;
+    width: 700px;
+    font-family: 'Paprika', cursive;
+    font-size: 11px;
+    color: lightblue;
+    display: flex;
+    justify-content: center;
+}
+        /* responsive design-UPPER SECTION*/
+/* width */
+    @media (width < 1090px) {
+        .logo{
+            font-size: 100px;
+        }
+        .logo img{
+            height: 230px;
+            width: 220px;
+        }.ulogo{
+            height: 106px;
+        }
+        .slogan{
+            font-size: 23px;
+            padding-left: 64px;
+        }
+        .bio{
+            width: 620px;
+            font-size: 10px;
+        }
+    }
+    @media (width <980px){
+        .nav-links a{
+            font-size: 35px;
+        }
+        .head{
+            padding-left: 55px;
+        }
+        .slogan{
+            font-size: 22px;
+        }
+    }  
+    @media (width <930px) {
+        .logo{
+            font-size: 87px;
+        }
+        .logo img{
+            height: 200px;
+            width: 193px;
+        }
+        .ulogo{
+            height: 92px;
+        }
+        .head{
+            padding-left: 55px;
+        }
+        .slogan{
+            padding-left: 56px;
+            font-size: 21px;
+        }
+        .bio{
+            width: 570px;
+            font-size: 9px;
+        }
+    }
+    @media (width <830px) {
+        .nav-links a{
+            font-size: 33px;
+        }
+        .logo{
+            font-size: 82px;
+        }
+        .logo img{
+            height: 190px;
+            width: 184px;
+        }
+        .ulogo{
+            height: 87px;
+        }
+        .head{
+            padding-left: 55px;
+        }
+        .slogan{
+            padding-left: 52px;
+            font-size: 20px;
+        }
+    }
+    @media (width <770px){
+        .nav-links a{
+            font-size: 32px;
+        }
+        .logo{
+            font-size: 76px;
+        }
+        .logo img{
+            height: 180px;
+            width: 174px;
+        }
+        .ulogo{
+            height: 81px;
+        }
+        .head{
+            padding-left: 50px;
+        }
+        .slogan{
+            padding-left: 48px;
+        }
+    }
+    @media (width <720px){
+        .nav-links a{
+            font-size: 31px;
+        }
+        .logo{
+            font-size: 73px;
+        }
+        .logo img{
+            height: 170px;
+            width: 165px;
+        }
+        .ulogo{
+            height: 79px;
+        }
+        .head{
+            padding-left: 40px;
+        }
+        .slogan{
+            padding-left: 46px;
+            font-size: 19px;
+        }
+    }
+    @media (width <680px){
+        .logo{
+            font-size: 73px;
+        }
+        .logo img{
+            height: 160px;
+            width: 155px;
+        }
+        .ulogo{
+            height: 79px;
+        }
+        .head{
+            padding-left: 18px;
+        }
+        .slogan{
+            font-size: 18px;
+        }  
+    }
+    @media (width <651px){
+        .logo{
+            font-size: 73px;
+        }
+        .logo img{
+            height: 160px;
+            width: 155px;
+        }
+        .ulogo{
+            height: 79px;
+        }
+        .head{
+            padding-left: 18px;
+        }
+    }
+    @media (width <630px){
+        .logo{
+            font-size: 70px;
+        }
+        .logo img{
+            height: 155px;
+            width: 150px;
+        }
+        .ulogo{
+            height: 74px;
+        }
+        .head{
+            padding-left: 10px;
+        }
+        .slogan{
+            font-size: 17px;
+            padding-left: 44px;
+        } 
+        .bio{
+            width: 500px;
+            font-size: 8px;
+        }
+    }
+    @media (width <585px){
+        .navigation-wrapper{
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+        .nav-links{
+            border: 3px solid transparent;
+            padding-right: 3px;
+        }
+        .logo{
+            font-size: 60px;
+        }
+        .logo img{
+            height: 145px;
+            width: 140px;
+        }
+        .head{
+            padding-left: 5px;
+        }
+        .ulogo{
+            height: 65px;
+        }
+        .slogan{
+            font-size: 16px;
+            padding-left: 39px;
+        } 
+        .bio{
+            width: 450px;
+            font-size: 7px;
+        }
+    }
+    @media (width <530px){
+        .nav-links{
+            width: 400px;
+            display: flex;
+            justify-content: center;
+        }
+        .nav-links a{
+            font-size: 28px;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+    }
+    @media (width <505px){
+        .head{
+            padding-left: 0px;
+        }
+    }
+    @media (width <500px){
+        .logo{
+            font-size: 55px;
+        }
+        .logo img{
+            height: 128px;
+            width: 123px;
+        }
+        .ulogo{
+            height: 58px;
+        }
+        .slogan{
+            font-size: 14px;
+            padding-left: 34px;
+        } 
+        .bio{
+            width: 390px;
+            font-size: 6px;
+        }
+    }
+    @media (width <460px){
+        .logo{
+            font-size: 50px;
+        }
+        .logo img{
+            height: 115px;
+            width: 110px;
+        }
+        .ulogo{
+            height: 54px;
+        }
+        .slogan{
+            font-size: 13px;
+            padding-left: 30px;
+        } 
+        .bio{
+            width: 380px;
+            font-size: 6px;
+        }
+    }
+    @media (width <415px){
+        .nav-links a{
+            font-size: 26px;
+            margin-left: 5px;
+            margin-right: 5px;
+        }
+        .about a{
+            width: 70px;
+        }
+        .experience a{
+            width: 120px;
+        }
+        .bods a{
+            width: 60px;
+        }
+        .logo{
+            font-size: 45px;
+        }
+        .logo img{
+            height: 100px;
+            width: 94px;
+        }
+        .ulogo{
+            height: 49px;
+        }
+        .slogan{
+            font-size: 13px;
+            padding-left: 29px;
+        } 
+        .bio{
+            width: 245px;
+            font-size: 6px;
+        }
+    }
+    @media (width <370px){
+        .navigation-wrapper{
+            height: 65px;
+        }
+        .nav-links{
+            width: 330px;
+        }
+        .nav-links a{
+            height: 35px;
+            margin-right: 0px;
+            margin-left: 0px;
+            font-size: 24px;
+        }
+        .about a{
+            width: 55px;
+        }
+        .experience a{
+            width: 110px;
+        }
+        .bods a{
+            width: 47px;
+        }
+        .logo{
+            font-size: 40px;
+        }
+        .logo img{
+            height: 85px;
+            width: 79px;
+        }
+        .ulogo{
+            height: 45px;
+        }
+        .slogan{
+            padding-left: 26px;
+        }
+    }
+    @media (width <325px){
+        .logo{
+            font-size: 34px;
+        }
+        .logo img{
+            height: 83px;
+            width: 77px;
+        }
+        .ulogo{
+            height: 38px;
+        }
+        .slogan{
+            padding-left: 22px;
+        } 
+    }
+    @media (width <290px){
+        .navigation-wrapper{
+            height: 58px;
+        }
+        .nav-links{
+            width: 310px;
+        }
+        .nav-links a{
+            font-size: 22px;
+            height: 30px;
+        }
+        .about a{
+            width: 50px;
+        }
+        .experience a{
+            width: 100px;
+        }
+        .bods a{
+            width: 45px;
+        }
+        .logo{
+            font-size: 31px;
+        }
+        .logo img{
+            height: 80px;
+            width: 75px;
+        }
+        .ulogo{
+            height: 34px;
+        }
+        .slogan{
+            padding-left: 20px;
+            font-size: 12px;
+        }  
+    }
+    @media (width <270px){
+        .logo{
+            font-size: 30px;
+        }
+        .logo img{
+            height: 76px;
+            width: 70px;
+        }
+        .ulogo{
+            height: 34px;
+        }
+        .bio{
+            font-size: 5px;
+            width: 205px;
+        }
+    }
+    @media (width <260px){
+        .logo{
+            font-size: 29px;
+        }
+        .logo img{
+            height: 70px;
+            width: 65px;
+        }
+        .ulogo{
+            height: 33px;
+        }
+    }
+    @media (width <250px){
+        .nav-links{
+            width: 290px;
+        }
+        .nav-links a{
+            font-size: 20px;
+            height: 27px;
+        }
+        .about a{
+            width: 46px;
+        }
+        .experience a{
+            width: 90px;
+        }
+        .bods a{
+            width: 42px;
+        }
+        .logo{
+            font-size: 29px;
+        }
+        .logo img{
+            height: 65px;
+            width: 60px;
+        }
+        .ulogo{
+            height: 32px;
+        }
+        .slogan{
+            font-size: 11px;
+        }
+    }
+    @media (width <243px){
+        .logo{
+            font-size: 28px;
+        }
+        .logo img{
+            height: 63px;
+            width: 57px;
+        }
+        .ulogo{
+            height: 32px;
+        }
+    }
+    @media (width <234px){
+        .logo{
+            font-size: 27px;
+        }
+        .logo img{
+            height: 58px;
+            width: 53px;
+        }
+        .ulogo{
+            height: 31px;
+        }
+        .slogan{
+            font-size: 10px;
+        }
+    }
+    @media (width <225px){
+        .nav-links{
+            width: 270px;
+        }
+        .nav-links a{
+            font-size: 17px;
+            height: 23px;
+        }
+        .about a{
+            width: 42px;
+        }
+        .experience a{
+            width: 85px;
+        }
+        .bods a{
+            width: 38px;
+        }
+        .logo{
+            font-size: 27px;
+        }
+        .logo img{
+            height: 52px;
+            width: 48px;
+        }
+        .ulogo{
+            height: 30px;
+        }
+        .slogan{
+            font-size: 10px;
+        }
+        .bio{
+            font-size: 4px;
+            width: 175px;
+        }
+    }
+    @media (width <220px){
+        .logo{
+            font-size: 26px;
+        }
+        .logo img{
+            height: 47px;
+            width: 43px;
+        }
+        .ulogo{
+            height: 31px;
+        }
+        .slogan{
+            font-size: 10px;    
+        }
+    }
+    @media (width <210px){
+        .logo{
+            font-size: 20px;
+        }
+        .logo img{
+            height: 37px;
+            width: 33px;
+        }
+        .ulogo{
+            height: 24px;
+        }
+        .slogan{
+            font-size: 7px;    
+        }
+        .bio{
+            font-size: 3px;
+            width: 140px;
+        }
+    }
+    @media (width <165px){
+        .logo{
+            font-size: 17px;
+        }
+        .logo img{
+            height: 32px;
+            width: 27px;
+        }
+        .ulogo{
+            height: 20px;
+        }
+        .slogan{
+            font-size: 5px;    
+        }
+        .bio{
+            font-size: 2px;
+            width: 100px;
+        }
+        
+    }
+
+/* Height */
+    @media (height <625px){
+        .header{
+            height: 530px;
+        }
+    }
+    @media (height <605px){
+        .nav-links{
+            height: 70px;
+        }
+        .header{
+            height: 520px;
+        }
+    }
+    @media (height <580px){
+        .header{
+            height: 510px;
+        }
+    }
+    @media (height <565px){
+        .nav-links a{
+            height: 35px;
+        }
+        .header{
+            height: 500px;
+        }
+    }
+    @media (height <550px){
+        .nav-links{
+            height: 65px;
+        }
+        .header{
+            height: 495px;
+        }
+    }
+    @media (height <540px){
+        .header{
+            height: 485px;
+        }
+    }
+    @media (height <530px){
+        .nav-links{
+            height: 60px;
+        }
+        .header{
+            height: 480px;
+        }
+    }
+    @media (height <520px){
+        .header{
+            height: 465px;
+        }
+    }
+    @media (height <510px){
+        .nav-links{
+            height: 58px;
+        }
+        .header{
+            height: 460px;
+        }
+    }
+    @media (height <500px){
+        .header{
+            height: 450px;
+        }
+    }
+    @media (height <485px){
+        .header{
+            height: 440px;
+        }
+    }
+   
+
+    /* Middle Section */
+
+.mid-section{
+    position: relative;
+    height: 500px;
+    width: 100%; 
+}
+.desc{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 400px;
+    text-align: center;
+    flex-wrap: wrap;
+}
+.part-1{
+    margin: 20px 10px;
+    width: 208px;
+    height: 208px;
+    position: relative;
+    font-family: 'Courgette', cursive;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition-duration: 0.5s;  
+}
+.part-1::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 208px;
+    height: 208px;
+    background-image: url(images/desc-1.jpg);
+    background-position: center;
+    background-repeat: none;
+    background-size: 210px 210px;
+    border: 0.5px solid transparent;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    filter: brightness(40%);
+    box-shadow: black 0px  0px 10px;
+}
+.part-1:hover{
+    filter: brightness(120%);
+    letter-spacing: 1px;
+}
+.part-2{
+    margin: 20px 10px;
+    position: relative;
+    width: 208px;
+    height: 208px;
+    color: light;
+    font-family: 'Courgette', cursive;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition-duration: 0.5s;
+}
+.part-2::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 208px;
+    height: 208px;
+    background-image: url(images/desc-2.jpg);
+    background-position: center;
+    background-repeat: none;
+    background-size: 210px 210px;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    filter: brightness(40%);
+    box-shadow: black 0px  0px 10px;
+}
+.part-2:hover{
+    filter: brightness(120%);
+    letter-spacing: 1px;
+}
+.part-3{
+    margin: 20px 10px;
+    position: relative;
+    width: 208px;
+    height: 208px;
+    font-family: 'Courgette', cursive;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition-duration: 0.5s;
+}
+.part-3::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 208px;
+    height: 208px;
+    background-image: url(images/desc-3.jpg);
+    background-position: center;
+    background-repeat: none;
+    background-size: 210px 210px;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    filter: brightness(40%);
+    box-shadow: black 0px  0px 10px;
+}
+.part-3:hover{
+    filter: brightness(120%);
+    letter-spacing: 1px;
+}
+.text{
+    position: relative;
+    color: rgb(175, 175, 175);
+    font-family: 'Courgette', cursive;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+    /* reaponsive design-MIDLLE SECTION */
+/* width */
+    @media (width < 477px){
+       .mid-section{
+        height: 800px;
+       } 
+    }
+    /* height */
+
+    /* Bottom Section */
+
+.footer{
+    position: relative;
+    height: 270px;
+    color: rgb(186, 209, 216);
+    font-family: 'Acme', sans-serif;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    transition-duration: 0.5s;
+}
+.footer:hover{
+    letter-spacing: 1px;
+}
+.footer::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: url(images/interact_background-3.png);
+    background-position: center;
+    background-repeat: none;
+    background-size: cover;
+    opacity: 90%;
+    filter: brightness(30%);
+}
+.contact{
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.email{
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.instagram{
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.instagram a{
+    position: relative;
+    text-decoration: none;
+    color: rgb(186, 209, 216);
+}
+.icons{
+    height: 50px;
+    font-size: 38px;
+    display: flex;
+    justify-content: center;
+}
